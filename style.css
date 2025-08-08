@@ -1,0 +1,189 @@
+:root {
+    --primary-blue: #001f3f;
+    --dark-text: #333;
+    --light-text: #f0f0f0;
+    --accent-green: #38c172;
+    --card-background: #ffffff;
+    --body-bg: #f5f5f5;
+    --border-color: #ddd;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: var(--body-bg);
+    color: var(--dark-text);
+    line-height: 1.6;
+}
+
+.header {
+    background-color: var(--primary-blue);
+    color: var(--light-text);
+    padding: 1.5rem 1rem;
+    display: flex;
+    align-items: center;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.user-avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--light-text);
+}
+
+.user-greeting p {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.container {
+    padding: 1rem;
+    padding-bottom: 80px; /* Espaço para o menu inferior */
+}
+
+.investments-summary {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+/* Estilos para a nova seção do gráfico */
+.investment-chart-container {
+    margin-top: 40px;
+}
+
+.chart-card {
+    background-color: var(--card-background);
+    padding: 1rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.card {
+    background-color: var(--primary-blue);
+    color: var(--light-text);
+    padding: 1.5rem;
+    border-radius: 12px;
+}
+
+.card-title {
+    font-size: 0.8rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    opacity: 0.8;
+}
+
+.card-value {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 0.5rem;
+}
+
+.monthly-return .card-value {
+    color: var(--accent-green);
+}
+
+.section-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: var(--primary-blue);
+}
+
+.projects-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+}
+
+.project-card {
+    background-color: var(--card-background);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.project-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.project-details {
+    padding: 1rem;
+}
+
+.project-name {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.project-participation {
+    font-size: 0.75rem;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #888;
+}
+
+.project-percentage {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--primary-blue);
+    margin-top: 0.25rem;
+}
+
+/* Menu inferior */
+.bottom-menu {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--card-background);
+    border-top: 1px solid var(--border-color);
+    box-shadow: 0 -2px 10px rgba(0,0,0,0.05);
+    padding: 0.5rem 0;
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #888;
+    font-size: 0.7rem;
+    font-weight: 600;
+    padding: 0.5rem;
+    flex: 1;
+    text-align: center;
+}
+
+.menu-item i {
+    font-size: 1.2rem;
+    margin-bottom: 0.2rem;
+}
+
+.menu-item.active {
+    color: var(--primary-blue);
+}
+
+.menu-item.active i {
+    color: var(--primary-blue);
+}

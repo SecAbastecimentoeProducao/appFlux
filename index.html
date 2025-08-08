@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="user-info">
+            <img src="imagePerfil.jpeg" alt="Foto do usuário" class="user-avatar">
+            <div class="user-greeting">
+                <p>Olá! Marcley Rocha</p>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="investments-summary">
+            <div class="card total-invested">
+                <p class="card-title">VALOR TOTAL INVESTIDO</p>
+                <p class="card-value">R$ 73.456,80</p>
+            </div>
+            <div class="card monthly-return">
+                <p class="card-title">RETORNO MENSAL</p>
+                <p class="card-value">R$ 5.450,00</p>
+            </div>
+        </section>
+
+        <section class="featured-projects">
+            <h2 class="section-title">PROJETOS EM DESTAQUE</h2>
+            <div class="projects-list">
+                <div class="project-card">
+                    <img src="casa.webp" alt="Casa Aluguel Manaus" class="project-image">
+                    <div class="project-details">
+                        <p class="project-name">CASA ALUGUEL MANAUS - AM</p>
+                        <p class="project-participation">PARTICIPAÇÃO</p>
+                        <p class="project-percentage">34%</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="carro.webp" alt="Carro Venda" class="project-image">
+                    <div class="project-details">
+                        <p class="project-name">CARRO VENDA</p>
+                        <p class="project-participation">PARTICIPAÇÃO</p>
+                        <p class="project-percentage">78%</p>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="aluguell.webp" alt="Casa Venda Gramado" class="project-image">
+                    <div class="project-details">
+                        <p class="project-name">CASA VENDA GRAMADO - SC</p>
+                        <p class="project-participation">PARTICIPAÇÃO</p>
+                        <p class="project-percentage">86,9%</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="investment-chart-container">
+            <h2 class="section-title">RETORNO DOS ÚLTIMOS 30 DIAS</h2>
+            <div class="chart-card">
+                <canvas id="investmentChart"></canvas>
+            </div>
+        </section>
+    </main>
+
+    <nav class="bottom-menu">
+        <a href="#" class="menu-item active" data-name="dashboard">
+            <i class="fas fa-home"></i>
+            <span>DASHBOARD</span>
+        </a>
+        <a href="#" class="menu-item" data-name="investir">
+            <i class="fas fa-dollar-sign"></i>
+            <span>INVESTIR</span>
+        </a>
+        <a href="#" class="menu-item" data-name="carteira">
+            <i class="fas fa-wallet"></i>
+            <span>CARTEIRA</span>
+        </a>
+        <a href="#" class="menu-item" data-name="notificacoes">
+            <i class="fas fa-bell"></i>
+            <span>NOTIFICAÇÕES</span>
+        </a>
+        <a href="#" class="menu-item" data-name="configuracao">
+            <i class="fas fa-cog"></i>
+            <span>CONFIGURAÇÃO</span>
+        </a>
+    </nav>
+
+    <script src="script.js"></script>
+</body>
+</html>
