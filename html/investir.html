@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Investir</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header class="header invest-header">
+        <div class="header-content">
+            <a href="index.html" class="back-arrow"><i class="fas fa-arrow-left"></i></a>
+            <h1 class="page-title">Investir</h1>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="search-section">
+            <div class="search-bar">
+                <i class="fas fa-search"></i>
+                <input type="text" id="searchInput" placeholder="Buscar projetos...">
+            </div>
+        </section>
+
+        <section class="projects-available">
+            <h2 class="section-title">Projetos Disponíveis</h2>
+            <div class="projects-list">
+                <div class="project-card-invest">
+                    <img src="https://via.placeholder.com/300x200" alt="Apartamento Itaim Bibi" class="project-image-invest">
+                    <div class="project-details-invest">
+                        <h3 class="project-title">Apartamento Itaim Bibi - SP</h3>
+                        <p class="project-description">Apartamento de alto padrão com 3 quartos e vista panorâmica.</p>
+                        <div class="project-info">
+                            <span class="info-item">Rentabilidade: <strong>1,2% a.m.</strong></span>
+                            <span class="info-item">Retorno Estimado: <strong>18 meses</strong></span>
+                        </div>
+                        <div class="project-footer">
+                            <span class="value-item">Valor Mínimo: <strong>R$ 5.000</strong></span>
+                            <button class="invest-button">Investir</button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card-invest">
+                    <img src="https://via.placeholder.com/300x200" alt="Terreno para Loteamento" class="project-image-invest">
+                    <div class="project-details-invest">
+                        <h3 class="project-title">Terreno para Loteamento - MG</h3>
+                        <p class="project-description">Terreno com ótima localização para desenvolvimento de loteamento residencial.</p>
+                        <div class="project-info">
+                            <span class="info-item">Rentabilidade: <strong>1,8% a.m.</strong></span>
+                            <span class="info-item">Retorno Estimado: <strong>24 meses</strong></span>
+                        </div>
+                        <div class="project-footer">
+                            <span class="value-item">Valor Mínimo: <strong>R$ 10.000</strong></span>
+                            <button class="invest-button">Investir</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card-invest">
+                    <img src="https://via.placeholder.com/300x200" alt="Loja Comercial" class="project-image-invest">
+                    <div class="project-details-invest">
+                        <h3 class="project-title">Loja Comercial - RJ</h3>
+                        <p class="project-description">Loja em ponto comercial estratégico na região central do Rio de Janeiro.</p>
+                        <div class="project-info">
+                            <span class="info-item">Rentabilidade: <strong>1,1% a.m.</strong></span>
+                            <span class="info-item">Retorno Estimado: <strong>12 meses</strong></span>
+                        </div>
+                        <div class="project-footer">
+                            <span class="value-item">Valor Mínimo: <strong>R$ 3.000</strong></span>
+                            <button class="invest-button">Investir</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <nav class="bottom-menu">
+        <a href="index.html" class="menu-item" data-name="dashboard">
+            <i class="fas fa-home"></i>
+            <span>DASHBOARD</span>
+        </a>
+        <a href="investir.html" class="menu-item active" data-name="investir">
+            <i class="fas fa-dollar-sign"></i>
+            <span>INVESTIR</span>
+        </a>
+        <a href="#" class="menu-item" data-name="carteira">
+            <i class="fas fa-wallet"></i>
+            <span>CARTEIRA</span>
+        </a>
+        <a href="#" class="menu-item" data-name="notificacoes">
+            <i class="fas fa-bell"></i>
+            <span>NOTIFICAÇÕES</span>
+        </a>
+        <a href="#" class="menu-item" data-name="configuracao">
+            <i class="fas fa-cog"></i>
+            <span>CONFIGURAÇÃO</span>
+        </a>
+    </nav>
+
+    <script src="investir.js"></script>
+</body>
+</html>
