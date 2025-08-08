@@ -186,4 +186,127 @@ body {
 
 .menu-item.active i {
     color: var(--primary-blue);
+
+    /* Estilos para a página de Carteira */
+.wallet-summary {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.transaction-history {
+    margin-top: 1.5rem;
+}
+
+.history-list {
+    list-style: none;
+    padding: 0;
+}
+
+.history-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: var(--card-background);
+    border-radius: 8px;
+    margin-bottom: 0.75rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.history-description {
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.history-value-positive {
+    color: var(--accent-green);
+    font-weight: bold;
+}
+
+.history-value-negative {
+    color: #ff4136;
+    font-weight: bold;
+}
+
+.history-date {
+    font-size: 0.75rem;
+    color: #888;
+}
+
+/* Estilos para a página de Notificações */
+.notification-list {
+    list-style: none;
+    padding: 0;
+}
+
+.notification-item {
+    display: flex;
+    align-items: flex-start;
+    padding: 1rem;
+    background-color: var(--card-background);
+    border-radius: 8px;
+    margin-bottom: 0.75rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.notification-item.unread {
+    border-left: 4px solid var(--primary-blue);
+}
+
+.notification-icon {
+    font-size: 1.5rem;
+    color: var(--primary-blue);
+    margin-right: 1rem;
+}
+
+.notification-item.unread .notification-icon {
+    color: var(--accent-green);
+}
+
+.notification-content {
+    flex-grow: 1;
+}
+
+.notification-message {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    margin-bottom: 0.25rem;
+}
+
+.notification-time {
+    font-size: 0.75rem;
+    color: #888;
+}
+
+/* Estilos para a página de Configurações */
+.settings-list {
+    list-style: none;
+    padding: 0;
+}
+
+.settings-item a {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    background-color: var(--card-background);
+    border-radius: 8px;
+    margin-bottom: 0.75rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    text-decoration: none;
+    color: var(--dark-text);
+}
+
+.settings-item a span {
+    flex-grow: 1;
+    margin-left: 1rem;
+}
+
+.settings-icon {
+    font-size: 1.2rem;
+    color: var(--primary-blue);
+}
+
+.settings-arrow {
+    color: #ccc;
 }

@@ -6,8 +6,8 @@
     <title>Dashboard</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <script src="script.js"></script>
-</head>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    </head>
 <body>
     <header class="header">
         <div class="user-info">
@@ -59,38 +59,38 @@
                 </div>
             </div>
         </section>
-
+        
         <section class="investment-chart-container">
-            <h2 class="section-title">RETORNO DOS ÚLTIMOS 30 DIAS</h2>
-            <div class="chart-card">
-                <canvas id="investmentChart"></canvas>
-            </div>
-        </section>
+            <h2 class="section-title">RETORNO DOS ÚLTIMOS 30 DIAS</h2>
+            <div class="chart-card">
+                <canvas id="investmentChart"></canvas>
+            </div>
+        </section>
     </main>
 
-    <nav class="bottom-menu">
-        <a href="#" class="menu-item active" data-name="dashboard">
-            <i class="fas fa-home"></i>
-            <span>DASHBOARD</span>
-        </a>
-        <a href="#" class="menu-item" data-name="investir">
-            <i class="fas fa-dollar-sign"></i>
-            <span>INVESTIR</span>
-        </a>
-        <a href="#" class="menu-item" data-name="carteira">
-            <i class="fas fa-wallet"></i>
-            <span>CARTEIRA</span>
-        </a>
-        <a href="#" class="menu-item" data-name="notificacoes">
-            <i class="fas fa-bell"></i>
-            <span>NOTIFICAÇÕES</span>
-        </a>
-        <a href="#" class="menu-item" data-name="configuracao">
-            <i class="fas fa-cog"></i>
-            <span>CONFIGURAÇÃO</span>
-        </a>
-    </nav>
-
+<nav class="bottom-menu">
+    <a href="index.html" class="menu-item" data-name="dashboard">
+        <i class="fas fa-home"></i>
+        <span>DASHBOARD</span>
+    </a>
+    <a href="investir.html" class="menu-item" data-name="investir">
+        <i class="fas fa-dollar-sign"></i>
+        <span>INVESTIR</span>
+    </a>
+    <a href="carteira.html" class="menu-item" data-name="carteira">
+        <i class="fas fa-wallet"></i>
+        <span>CARTEIRA</span>
+    </a>
+    <a href="notificacoes.html" class="menu-item" data-name="notificacoes">
+        <i class="fas fa-bell"></i>
+        <span>NOTIFICAÇÕES</span>
+    </a>
+    <a href="configuracoes.html" class="menu-item" data-name="configuracao">
+        <i class="fas fa-cog"></i>
+        <span>CONFIGURAÇÃO</span>
+    </a>
+</nav>
+    
     <script src="script.js"></script>
-</body>
+    </body>
 </html>

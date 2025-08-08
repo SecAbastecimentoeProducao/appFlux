@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notificações</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header class="header invest-header">
+        <div class="header-content">
+            <a href="index.html" class="back-arrow"><i class="fas fa-arrow-left"></i></a>
+            <h1 class="page-title">Notificações</h1>
+        </div>
+    </header>
+
+    <main class="container">
+        <ul class="notification-list">
+            <li class="notification-item">
+                <i class="fas fa-check-circle notification-icon"></i>
+                <div class="notification-content">
+                    <p class="notification-message">Seu investimento em "Apartamento Itaim Bibi" foi concluído com sucesso!</p>
+                    <span class="notification-time">Há 2 horas</span>
+                </div>
+            </li>
+            <li class="notification-item unread">
+                <i class="fas fa-dollar-sign notification-icon"></i>
+                <div class="notification-content">
+                    <p class="notification-message">Novo retorno mensal disponível em "Casa Aluguel Manaus".</p>
+                    <span class="notification-time">Ontem</span>
+                </div>
+            </li>
+            <li class="notification-item">
+                <i class="fas fa-info-circle notification-icon"></i>
+                <div class="notification-content">
+                    <p class="notification-message">Não se esqueça de verificar os novos projetos em destaque.</p>
+                    <span class="notification-time">1 semana atrás</span>
+                </div>
+            </li>
+        </ul>
+    </main>
+
+    <nav class="bottom-menu">
+        <a href="index.html" class="menu-item" data-name="dashboard">
+            <i class="fas fa-home"></i>
+            <span>DASHBOARD</span>
+        </a>
+        <a href="investir.html" class="menu-item" data-name="investir">
+            <i class="fas fa-dollar-sign"></i>
+            <span>INVESTIR</span>
+        </a>
+        <a href="carteira.html" class="menu-item" data-name="carteira">
+            <i class="fas fa-wallet"></i>
+            <span>CARTEIRA</span>
+        </a>
+        <a href="notificacoes.html" class="menu-item active" data-name="notificacoes">
+            <i class="fas fa-bell"></i>
+            <span>NOTIFICAÇÕES</span>
+        </a>
+        <a href="configuracoes.html" class="menu-item" data-name="configuracao">
+            <i class="fas fa-cog"></i>
+            <span>CONFIGURAÇÃO</span>
+        </a>
+    </nav>
+
+    <script src="notificacoes.js"></script>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Carteira</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <header class="header invest-header">
+        <div class="header-content">
+            <a href="index.html" class="back-arrow"><i class="fas fa-arrow-left"></i></a>
+            <h1 class="page-title">Minha Carteira</h1>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="wallet-summary card">
+            <p class="card-title">SALDO TOTAL</p>
+            <p class="card-value">R$ 73.456,80</p>
+        </section>
+
+        <section class="transaction-history">
+            <h2 class="section-title">Histórico de Transações</h2>
+            <ul class="history-list">
+                <li class="history-item">
+                    <span class="history-description">Investimento em Apartamento Itaim Bibi</span>
+                    <span class="history-value-positive">+ R$ 5.000,00</span>
+                    <span class="history-date">10/08/2025</span>
+                </li>
+                <li class="history-item">
+                    <span class="history-description">Retorno Mensal - Aluguel Manaus</span>
+                    <span class="history-value-positive">+ R$ 345,67</span>
+                    <span class="history-date">01/08/2025</span>
+                </li>
+                <li class="history-item">
+                    <span class="history-description">Retirada</span>
+                    <span class="history-value-negative">- R$ 1.200,00</span>
+                    <span class="history-date">05/07/2025</span>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <nav class="bottom-menu">
+        <a href="index.html" class="menu-item" data-name="dashboard">
+            <i class="fas fa-home"></i>
+            <span>DASHBOARD</span>
+        </a>
+        <a href="investir.html" class="menu-item" data-name="investir">
+            <i class="fas fa-dollar-sign"></i>
+            <span>INVESTIR</span>
+        </a>
+        <a href="carteira.html" class="menu-item active" data-name="carteira">
+            <i class="fas fa-wallet"></i>
+            <span>CARTEIRA</span>
+        </a>
+        <a href="notificacoes.html" class="menu-item" data-name="notificacoes">
+            <i class="fas fa-bell"></i>
+            <span>NOTIFICAÇÕES</span>
+        </a>
+        <a href="configuracoes.html" class="menu-item" data-name="configuracao">
+            <i class="fas fa-cog"></i>
+            <span>CONFIGURAÇÃO</span>
+        </a>
+    </nav>
+
+    <script src="carteira.js"></script>
+</body>
+</html>
